@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layer"
+    tools:context=".LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/input"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sp_rec">
+
+        <EditText
+            android:drawableLeft="@drawable/ic_username"
+            android:drawablePadding="10dp"
+            android:id="@+id/tv_usernamer"
+            android:backgroundTint="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2B2B2B"
+            android:layout_below="@+id/tv_usernamer"/>
+
+        <EditText
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:backgroundTint="#fff"
+            android:hint="email"
+            android:layout_below="@+id/nohp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2B2B2B"
+            android:layout_below="@+id/tv_email"/>
+
+        <EditText
+            android:id="@+id/tv_password"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:backgroundTint="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_email"
+            android:inputType="textPassword"
+            android:hint="password" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2B2B2B"
+            android:layout_below="@+id/ed_gender"/>
+
+        <EditText
+            android:id="@+id/ed_gender"
+            android:drawableLeft="@drawable/ic_username"
+            android:drawablePadding="10dp"
+            android:backgroundTint="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_usernamer"
+            android:hint="Gender (Male / Female)" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2B2B2B"
+            android:layout_below="@+id/nohp"/>
+
+        <EditText
+            android:id="@+id/nohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_gender"
+            android:backgroundTint="#fff"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:hint="No.hp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/next2"
+        android:src="@drawable/ic_next"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/input"
+        android:layout_marginBottom="40dp"
+        android:textSize="27sp"
+        android:text="Register"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/sp_rec"
+        android:paddingLeft="10dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="3dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="17sp" />
+
+    <ProgressBar
+        android:id="@+id/progressbarR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

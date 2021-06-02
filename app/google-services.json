@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1065638442361",
+    "project_id": "analog-receiver-313213",
+    "storage_bucket": "analog-receiver-313213.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065638442361:android:39f2ac53b20ee30006eba8",
+        "android_client_info": {
+          "package_name": "com.example.grapy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065638442361-h3fcvpdfc3o0834v33omtictssa9tl4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARjkzwpMgLsmVAK9KAjZ5qflWxd-qAsGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065638442361-h3fcvpdfc3o0834v33omtictssa9tl4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

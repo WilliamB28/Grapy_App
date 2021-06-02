@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:foregroundGravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="Welcome"
+                android:layout_gravity="center"
+                android:textColor="#2C90DF"
+                android:textSize="60sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="10dp"></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="294dp"
+                android:src="@drawable/logo"></ImageView>
+
+            <Button
+                android:id="@+id/browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#D56363"
+                android:backgroundTint="#FB0101"
+                android:text="Browse Group Theraphy"
+                android:textColor="#FDFCFC"
+                android:textSize="20sp"
+                app:iconTint="#BD7272"
+                app:rippleColor="#FBFAFA"></Button>
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/aclonica"
+                android:text="YOU ARE NOT ALONE"
+                android:textColor="#2196F3"
+                android:textSize="17sp"></TextView>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/aclonica"
+                android:text="WE ARE HERE TO HELP YOU"
+                android:textColor="#2196F3"
+                android:textSize="17sp"></TextView>
+
+        </GridLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

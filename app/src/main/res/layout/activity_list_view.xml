@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:background="#F4EEEE"
+    android:columnCount="2"
+    android:elevation="200dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"></ImageView>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:textAlignment="textStart"
+        android:elevation="100dp">
+
+        <TextView
+            android:fontFamily="@font/aclonica"
+            android:text="Group Name : "
+            android:textColor="#1A1B1B"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Group Name"
+            android:textColor="#191818"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:fontFamily="@font/aclonica"
+            android:text="Recommended For : "
+            android:textColor="#0C0C0C"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/personality"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/aclonica"
+            android:text="personality"
+            android:textColor="#050505"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:fontFamily="@font/aclonica"
+            android:text="Total Member : "
+            android:textColor="#1C1A1A"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/total_member"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/aclonica"
+            android:text="number"
+            android:textColor="#121111"
+            android:textSize="12sp"></TextView>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:text="Join Group"></Button>
+
+</GridLayout>
